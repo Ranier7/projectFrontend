@@ -1,0 +1,25 @@
+<h2> Lista de Empresas </h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th> Cnpj </th>
+            <th> Razão Social </th>
+            <th> Nome Fantasia </th>
+            <th> Telefone </th>
+            <th> Ações </th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor = "let company of company">
+            <td> {{ company.cnpj }} </td>
+            <td> {{ company.razaoSocial }} </td>
+            <td> {{ company.nomeFantasia }} </td>
+            <td> {{ company.telefone }} </td>
+            <td>
+                <button (click) = "updateCompany(company.id)" class = "btn btn-info"> Editar </button>
+                <button (click) = "deleteCompany(company.id)" class = "btn btn-danger" style="margin-left: 10px"> Deletar </button>
+                <button (click) = "companyDetails(company.id)" class = "btn btn-info" style="margin-left: 10px"> Detalhes </button>
+            </td>
+        </tr>
+    </tbody>
+</table>

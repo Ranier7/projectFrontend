@@ -1,0 +1,30 @@
+<div class ="col-md-6 offset-md-3">
+    <h3> Editar Empresas </h3>
+    <form (ngSubmit) = "onSubmit()">
+        <div class="form-group">
+            <label> CNPJ </label>
+            <input type ="text" class="form-control" id="cnpj"
+                [(ngModel)] = "company.cnpj" name="cnpj">
+        </div>
+    
+        <div class="form-group">
+            <label> Razão Social </label>
+            <input type ="text" class="form-control" id="razaoSocial"
+                [(ngModel)] = "company.razaoSocial" name="razaoSocial">
+        </div>
+    
+        <div class="form-group">
+            <label> Nome Fantasia </label>
+            <input type ="text" class="form-control" id="nomeFantasia"
+                [(ngModel)] = "company.nomeFantasia" name="nomeFantasia">
+        </div>
+    
+        <div class="form-group">
+            <label> Telefone </label>
+            <input type ="text" class="form-control" id="telefone"
+                [(ngModel)] = "company.telefone" name="telefone">
+        </div>
+    
+        <button class="btn btn-success" type="submit"> Cadastrar </button>
+    </form>
+    </div>

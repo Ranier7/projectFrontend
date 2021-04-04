@@ -1,0 +1,36 @@
+<div class ="col-md-6 offset-md-3">
+<h3> Cadastro de Funcionários </h3>
+<form (ngSubmit) = "onSubmit()">
+    <div class="form-group">
+        <label> Nome </label>
+        <input type ="text" class="form-control" id="nome"
+            [(ngModel)] = "employee.nome" name="nome">
+    </div>
+
+    <div class="form-group">
+        <label> CPF </label>
+        <input type ="text" class="form-control" id="cpf"
+            [(ngModel)] = "employee.cpf" name="cpf">
+    </div>
+
+    <div class="form-group">
+        <label> Telefone </label>
+        <input type ="text" class="form-control" id="telefone"
+            [(ngModel)] = "employee.telefone" name="telefone">
+    </div>
+
+    <div class="form-group">
+        <label> Email </label>
+        <input type ="text" class="form-control" id="email"
+            [(ngModel)] = "employee.email" name="email">
+    </div>
+
+    <div class="form-group">
+        <label> Empresa </label>
+        <input type ="text" class="form-control" id="empresa"
+            [(ngModel)] = "employee.empresa" name="empresa">
+    </div>
+
+    <button class="btn btn-success" type="submit"> Cadastrar </button>
+</form>
+</div>
